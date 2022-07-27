@@ -186,7 +186,6 @@ p {
     left: 0;
     width: 100vw;
     height: 796px;
-    z-index: 10;
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
@@ -691,32 +690,32 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/banner/banner-img-s.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/banner-img-s.png);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner-overlay {
-    background-image: url(../../images/banner/banner-img-@2s.png);
+    background-image: url(../images/banner/banner-img-@2s.png);
   }
 }
 @media screen and (min-width: 768px) {
   .banner-overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/banner/banner-img-m.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/banner-img-m.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .banner-overlay {
-    background-image: url(../../images/banner/banner-img-@2m.png);
+    background-image: url(../images/banner/banner-img-@2m.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .banner-overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/banner/banner-img-l.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner/banner-img-l.png);
     height: 600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner-overlay {
-    background-image: url(../../images/banner/banner-img-@2l.png);
+    background-image: url(../images/banner/banner-img-@2l.png);
   }
 }
 
