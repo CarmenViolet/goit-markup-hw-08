@@ -1,0 +1,22 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/reset";
+
+// Components
+
+// Header & Footer
+@import "./components/page-header";
+@import "./components/page-footer";
+
+// First Page
+@import "./components/banner";
+@import "./components/modal-window";
+@import "./components/form";
+@import "./components/sub-banner";
+@import "./components/works";
+@import "./components/our-team";
+@import "./components/our-clients";
+
+// Second Page
+@import "./components/filter-buttons";
+@import "./components/posters";

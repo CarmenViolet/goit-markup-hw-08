@@ -1,0 +1,116 @@
+.sub-banner {
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+}
+ }
+
+.sub-banner__list {
+    display: block;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex; 
+        flex-wrap: wrap;
+}
+
+    @media screen and (min-width: 1200px) { 
+        flex-wrap: nowrap;
+}
+}
+
+
+.sub-banner__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    
+    margin-bottom: 50px;
+
+    &.hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+}
+
+.sub-banner__item {
+
+    @media screen and (max-width: 767px) {
+       &:not(:last-child) {
+        margin-bottom: 30px;
+       }
+}
+    @media screen and (min-width: 768px) {
+        width: 354px;
+}
+}
+
+.sub-banner__item::before {
+    display: block;
+    content: '';
+    margin-bottom: 30px;
+    
+    height: 120px;
+    max-width: 450px;
+    
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.icon-antenna::before {
+ background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+
+.sub-banner__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #212121;
+
+    @media screen and (min-width: 768px) {
+       text-align: start;
+} 
+}
+        
+.sub-banner__description {
+margin-bottom: 0;
+
+font-size: 14px;
+line-height: 1.70;
+
+color: var(--secondary-text-color);
+}

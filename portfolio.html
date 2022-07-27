@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+                    <a href="index.html" class="logo header__logo"><span class="logo__label">Web</span>Studio</a>
+                        <button type="button" class="burger-menu__button is-open" aria-controls="menu-container" data-menu-button>
+                            <svg class="burger-menu__icons" width="25px" height="25px" aria-label="Switch">
+                                <use class="burger-menu__open" href="./images/sprite.svg#icon-menu-open" width="24px" height="16px"></use>
+                                <use class="burger-menu__close" href="./images/sprite.svg#icon-menu-close" width="19px" height="19px"></use>
+                            </svg>
+                        </button>
+                    <div class="menu-container is-open" id="menu-container" data-menu>
+                        <nav class="nav">
+                             <ul class="header-list list">
+                        <li class="header-list__item"><a href="./index.html" class="header-list__link header-list__link">Студия</a></li>
+                        <li class="header-list__item"><a href="portfolio.html" class="header-list__link header-list__link header-list__link--current">Портфолио</a></li>
+                        <li class="header-list__item"><a href="/" class="header-list__link">Контакты</a></li>
+                        </ul>
+                        </nav>
+                           <ul class="header-contacts list">
+                        <li class="header-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="header-contacts__link header-contacts__link--email">
+                        <span class="header-contacts__icon">
+                            <svg class="icon-envelope" width="14px" height="16px">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                        </span>
+                    info@devstudio.com</a>
+                    </li>
+                        <li class="header-contacts__item">
+                        <a href="tel:+380961111111" class="header-contacts__link header-contacts__link--tel">
+                        <span class="header-contacts__icon">
+                            <svg class="icon-smartphone" width="12px" height="16px">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                        </span>
+                        +38 096 111 11 11</a>
+                    </li>
+                    </ul>
+                    <ul class="header-social__list list">
+                        <li class="header-social__item">
+                            <a href="./index.html" class="header-social__link">Instagram</a>
+                            <span class="header-social__border"></span>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="./index.html" class="header-social__link">Twitter</a>
+                            <span class="header-social__border"></span>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="./index.html" class="header-social__link">Facebook</a>
+                            <span class="header-social__border"></span>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="./index.html" class="header-social__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+</header>
+    <!-- Основная информация -->
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title hidden">Примеры работ</h1>
+                <ul class="filter-button__list list">
+                    <li class="filter-button__item"><button type="button" class="filter-button__button filter-button__button--current">Все</button></li>
+                    <li class="filter-button__item"><button type="button" class="filter-button__button">Веб-сайты</button></li>
+                    <li class="filter-button__item"><button type="button" class="filter-button__button">Приложения</button></li>
+                    <li class="filter-button__item"><button type="button" class="filter-button__button">Дизайн</button></li>
+                    <li class="filter-button__item"><button type="button" class="filter-button__button">Маркетинг</button></li>
+                </ul>
+                <ul class="examples list">
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img  srcset="./images/posters/img-1_354.jpg 354w,
+                            ./images/posters/img-1_370.jpg 370w,
+                            ./images/posters/img-1_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-1_370.jpg" 
+                            height="294px"
+                            loading="lazy"
+                            alt="Пример вебсайта технокряк">
+                                <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Технокряк</h2>
+                            <p class="border__text">Веб-сайт</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-2_354.jpg 354w,
+                            ./images/posters/img-2_370.jpg 370w,
+                            ./images/posters/img-2_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-2_370.jpg"
+                            height="294px"
+                            alt="Игра баскетбол">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Постер New Orlean vs Golden Star</h2>
+                            <p class="border__text">Дизайн</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-3_354.jpg 354w,
+                            ./images/posters/img-3_370.jpg 370w,
+                            ./images/posters/img-3_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-3_370.jpg"
+                            height="294px" 
+                            alt="Банер ресторана Seafood">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Ресторан Seafood</h2>
+                            <p class="border__text">Приложение</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-4_354.jpg 354w,
+                            ./images/posters/img-4_370.jpg 370w,
+                            ./images/posters/img-4_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-4_370.jpg"
+                            height="294px" 
+                            alt="Наушники на изображении">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Проект Prime</h2>
+                            <p class="border__text">Маркетинг</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-5_354.jpg 354w,
+                            ./images/posters/img-5_370.jpg 370w,
+                            ./images/posters/img-5_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-5_370.jpg"
+                            height="294px" 
+                            alt="Несколько коробок">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Проект Boxes</h2>
+                            <p class="border__text">Приложение</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-6_354.jpg 354w,
+                            ./images/posters/img-6_370.jpg 370w,
+                            ./images/posters/img-6_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-6_370.jpg"
+                            height="294px" 
+                            alt="Изображение монитора">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Inspiration has no Borders</h2>
+                            <p class="border__text">Веб-сайт</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-7_354.jpg 354w,
+                            ./images/posters/img-7_370.jpg 370w,
+                            ./images/posters/img-7_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-7_370.jpg"
+                            height="294px"  
+                            alt="Журнал">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Издание Limited Edition</h2>
+                            <p class="border__text">Дизайн</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-8_354.jpg 354w,
+                            ./images/posters/img-8_370.jpg 370w,
+                            ./images/posters/img-8_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-8_370.jpg" 
+                            height="294px"
+                            alt="Лейбл">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Проект LAB</h2>
+                            <p class="border__text">Маркетинг</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="examples__item">
+                        <a class="examples__link" href="/">
+                            <div class="overlay-animated">
+                            <img srcset="./images/posters/img-9_354.jpg 354w,
+                            ./images/posters/img-9_370.jpg 370w,
+                            ./images/posters/img-9_450.jpg 450w"
+                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                            src="./images/posters/img-9_370.jpg"
+                            height="294px" 
+                            alt="Изображение ноутбука">
+                             <div class="overlay-animated__container">
+                                    <p class="overlay-animated__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                        <div class="border">
+                            <h2 class="border__description">Growing Business</h2>
+                            <p class="border__text">Приложение</p>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+ <!-- Контактная информация -->
+ <footer class="footer-contacts">
+    <div class="container">
+        <div class="footer-container">
+            <a href="./index.html" class="logo footer__logo"><span class="logo__label">Web</span>Studio</a>
+            <address>
+                <ul class="footer-contacts__list list">
+                    <li class="footer-contacts__item">
+                        <a href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                        target="_blank"
+                         rel="noopener nofollow noreferrer"
+                         class="footer-contacts__link">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-contacts__item"><a href="mailto:info@devstudio.com" class="footer-contacts__link footer-contacts__link--email">info@devstudio.com</a></li>
+                    <li class="footer-contacts__item"><a href="tel:+380961111111" class="footer-contacts__link footer-contacts__link--tel">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    <!-- Присоединяйтесь к нам! -->
+     <div class="social-media"> 
+            <p class="social-media__header">Присоединяйтесь</p>
+            <ul class="social-media__list list">
+                <li class="social-media__item">
+                    <a class="social-media__link" href="/">
+                        <svg class="social-media__icon">
+                            <use href="./images/sprite.svg#icon-instagram" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social-media__link" href="/">
+                        <svg class="social-media__icon">
+                            <use href="./images/sprite.svg#icon-twitter" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social-media__link" href="/">
+                        <svg class="social-media__icon">
+                            <use href="./images/sprite.svg#icon-facebook" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="social-media__link" href="/">
+                        <svg class="social-media__icon">
+                            <use href="./images/sprite.svg#icon-linkedin" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Подписка на рассылку -->
+        <div class="disctribution">
+            <p class="disctribution__header">Подпишитесь на рассылку</p>
+            <div class="subscribe-container">
+                <form class="subscribe-form" action="#">
+                    <label for="email">
+                        <input class="subscribe-form__email" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="subscribe-form__button" type="submit">Подписаться
+                        <svg class="subscribe-form__icon" width="24px" height="24px">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/mobile-menu.js"></script>
+</body>
+</html>
